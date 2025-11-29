@@ -41,8 +41,8 @@ export default function Header() {
             <a className="btn flex font-[500] gap-3 items-center text-white bg-black hover:bg-[#000000e0] py-2 px-2 pl-6 rounded-full cursor-pointer">
                 Contact Us
                 <div className=" relative h-[30px] w-[30px] flex items-center justify-center bg-white rounded-full overflow-hidden">
-                    <img className="btn-1 absolute" width={"13px"} src="/src/assets/right-arrow.png"/>
-                    <img className="btn-2 absolute " width={"13px"} src="/src/assets/right-arrow.png"/>
+                    <img className="btn-1 absolute" width={"13px"} src="../assets/right-arrow.png"/>
+                    <img className="btn-2 absolute " width={"13px"} src="../assets/right-arrow.png"/>
                 </div>
             </a>
         </div>
