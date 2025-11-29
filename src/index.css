@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+@keyframes cloudMove {
+  from {
+    transform: translateX(-500%);
+  }
+  to {
+    transform: translateX(700%);
+  }
+}
+
+.animate-cloud {
+  animation: cloudMove 20s linear infinite;
+}
+
+.max-section{
+  max-width: 1200px;
+  padding: 0 50px;
+}
+@media (max-width:767px){
+  .max-section{   
+  padding: 0 10px;
+}
+}
+#root{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+p, span, li{
+   font-family: "Inter", sans-serif;
+   color: #0e0d0e;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: "Albert Sans", sans-serif;
+}
+.jjj::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  background-size: contain !important;
+  opacity: .3;
+  background: url("/src/assets/dotted.png");
+}
+.tex-bg::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+    z-index: 11;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(107, 200, 237, 0) 60%, rgb(224 243 251) 100%);
+}
+.btn img{
+  transition: .4s;
+}
+.btn-1{
+  transform: translateX(-30px);
+}
+.btn:hover .btn-1{
+transform: translateX(0px);
+}
+.btn-2{
+  transform: translateX(0px);
+}
+.btn:hover .btn-2{
+transform: translateX(30px);
+}
