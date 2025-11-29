@@ -1,4 +1,9 @@
 import { motion, useScroll, useTransform,useSpring  } from "motion/react"
+import rightArrow from "../../assets/right-arrow.png"
+import cloude from "../../assets/cloud.png"
+import cloude2 from "../../assets/cloud-2.png"
+import ai from "../../assets/ai.png"
+
 
 
 export default function hero() {
@@ -62,12 +67,12 @@ const letter = {
       ))}
     </div>
       <img
-        src="../assets/cloud.png"
+        src={cloude}
         className="absolute top-10  w-50"
         style={{ animation: "cloudMove 30s linear infinite" }}
       />
       <img
-        src="../assets/cloud.png"
+        src={cloude}
         className="absolute top-12 z-3 w-62"
         style={{
           animation: "cloudMove 35s linear infinite",
@@ -75,7 +80,7 @@ const letter = {
         }}
       />
       <img
-        src="../assets/cloude-2.png"
+        src={cloude2}
         className="absolute top-60 z-3 w-62"
         style={{
           animation: "cloudMove 40s linear infinite",
@@ -88,7 +93,7 @@ const letter = {
       <div className="max-section relative block z-10">
         <div className="my-[150px] flex flex-col gap-7 items-center relative">
             
-           <p className="pr-[15px] pl-[8px] py-[2px] font-[400] text-[13px] border-[#ffffff4d] border rounded-full backdrop-blur-[5px] bg-[#ffffff52] flex items-center gap-2"><img width={"20px"} src="../assets/ai.png" alt="ai" />Ai Automation</p>
+           <p className="pr-[15px] pl-[8px] py-[2px] font-[400] text-[13px] border-[#ffffff4d] border rounded-full backdrop-blur-[5px] bg-[#ffffff52] flex items-center gap-2"><img width={"20px"} src={ai} alt="ai" />Ai Automation</p>
 
          
           {/* <motion.h1 className="relative head font-[500] md:text-[53px] text-[32px] md:leading-[70px] leading-[44px] tracking-tight text-center max-w-[800px] w-[100%] mx-auto">Get Your Website A next Generation Update With <span className="text-red-800">UooFer.</motion.h1.h1>
@@ -120,8 +125,8 @@ const letter = {
          <a className="btn flex font-[500] gap-3 border border-black items-center text-white bg-black hover:bg-[#000000e0] py-2 px-2 pl-6 rounded-full cursor-pointer">
                 Contact Us
                 <div className=" relative h-[30px] w-[30px] flex items-center justify-center bg-white rounded-full overflow-hidden">
-                    <img className="btn-1 absolute" width={"13px"} src="../assets/right-arrow.png"/>
-                    <img className="btn-2 absolute " width={"13px"} src="../assets/right-arrow.png"/>
+                    <img className="btn-1 absolute" width={"13px"} src={rightArrow}/>
+                    <img className="btn-2 absolute " width={"13px"} src={rightArrow}/>
                 </div>
             </a>
              <a className="btn flex font-[500] gap-3 items-center border border-black text-[#000] py-[0px] px-5 rounded-full cursor-pointer">

@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5{
   width: 100%;
   background-size: contain !important;
   opacity: .3;
-  background: url("../assets/dotted.png");
+  background: url("/src/assets/dotted.png");
 }
 .tex-bg::after{
   content: "";
